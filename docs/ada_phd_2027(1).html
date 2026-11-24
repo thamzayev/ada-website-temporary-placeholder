@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123c42">
+<meta name="description" content="ADA University Call for Applications: 2027 PhD study opportunities at leading Italian partner universities.">
+<title>PhD Study Opportunities in Italy | ADA University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#263b49;--muted:#637783;--teal:#4a6b81;--teal2:#5b7b90;
+  --gold:#b25065;--cream:#f5f6f7;--paper:#fff;--line:#e1e6e9;
+  --shadow:0 18px 55px rgba(18,48,51,.09);--radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:15px/1.55 "Roboto",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+.topbar{background:#354f61;color:#eaf1ed;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.topbar .wrap{height:42px;display:flex;align-items:center;justify-content:space-between}
+.topbar a{text-decoration:none;color:#b25065}
+.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#3d5d73 0%,#4a6b81 65%,#66859a 100%);color:white;padding:28px 0 66px}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.12);border-radius:50%;pointer-events:none}
+.hero:before{width:580px;height:580px;right:-130px;top:-300px}
+.hero:after{width:430px;height:430px;right:5px;top:-220px}
+.hero-inner{position:relative;z-index:1}
+.brand{display:flex;align-items:center;gap:15px;margin-bottom:38px}
+.brand-mark{width:62px;height:62px;object-fit:contain;background:#fff;border-radius:50%;padding:5px}
+.brand-name{font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:#dce9e4}
+.brand-name strong{display:block;font-size:15px;letter-spacing:.12em;color:white}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:#b25065;font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(42px,6.2vw,76px);line-height:1.03;letter-spacing:-.035em;max-width:800px;margin:20px 0}
+h1 em{font-weight:400;color:#b25065}
+.hero-copy{font-size:16px;max-width:690px;color:#e5edf2;margin:0 0 30px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:13px 21px;font-weight:700;text-decoration:none;transition:.2s}
+.btn.primary{background:#b25065;color:#263f50}
+.btn.primary:hover{background:#fff}
+.btn.ghost{border:1px solid rgba(255,255,255,.38);color:white}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.deadline-float{position:relative;z-index:2;margin-top:-34px}
+.deadline-card{background:white;border-radius:18px;box-shadow:var(--shadow);padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.deadline-label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800}
+.deadline-date{font-family:Georgia,serif;font-size:27px;color:var(--teal);font-weight:700}
+.deadline-note{color:var(--muted);font-size:14px}
+section{padding:56px 0}
+.section-kicker{color:#b25065;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:800}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(31px,4vw,45px);line-height:1.12;font-weight:500;margin:10px 0 15px;letter-spacing:-.025em}
+.lead{color:var(--muted);max-width:760px;margin:0;font-size:17px}
+.intro-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:46px;align-items:start}
+.note-panel{background:#edf1f4;border:1px solid #dce5eb;border-radius:var(--radius);padding:25px}
+.note-panel strong{display:block;color:var(--teal);font-family:Georgia,serif;font-size:22px;line-height:1.25;margin-bottom:9px}
+.note-panel p{margin:0;color:#53696a;font-size:14px}
+.universities{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.uni{background:white;border:1px solid var(--line);border-radius:17px;padding:18px;box-shadow:0 8px 28px rgba(18,48,51,.04)}
+.uni .code{font-size:11px;color:#b25065;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.uni h3{font-family:Georgia,serif;font-size:21px;line-height:1.2;margin:9px 0 6px}
+.uni p{margin:0;color:var(--muted);font-size:14px}
+.focus{background:#fff}
+.focus-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:28px}
+.focus-head p{max-width:420px;color:var(--muted);font-size:14px}
+.focus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.focus-card{border:1px solid var(--line);border-radius:19px;padding:20px;background:#fff}
+.focus-card.wide{grid-column:1/-1}
+.focus-card .tag{display:inline-block;border-radius:99px;background:#edf3ef;color:#4a6b81;padding:5px 10px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.focus-card h3{font-family:Georgia,serif;font-size:23px;line-height:1.2;margin:13px 0 7px}
+.focus-card .partner{font-size:13px;color:#b25065;font-weight:700;margin-bottom:12px}
+.focus-card p{color:var(--muted);margin:0 0 12px}
+.focus-card ul{padding-left:19px;margin:10px 0 0}
+.focus-card li{padding:3px 0;color:#42585b}
+.subtopics{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 24px;margin-top:16px}
+.subtopics div{border-top:1px solid var(--line);padding-top:9px;font-size:14px;color:#42585b}
+.subtopics strong{color:var(--teal)}
+.engineering{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:15px}
+.engineering h4{color:var(--teal);font-size:15px;margin:0 0 7px}
+.engineering ul{margin:0;padding-left:18px}
+.engineering li{font-size:14px;padding:3px 0}
+.process{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:22px}
+.step{background:white;border:1px solid var(--line);border-radius:18px;padding:19px}
+.step-no{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#edf1f4;color:var(--teal);font-weight:800;font-size:13px}
+.step h3{font-family:Georgia,serif;font-size:21px;margin:15px 0 7px}
+.step p{font-size:14px;color:var(--muted);margin:0}
+.details{background:#edf1ed}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.detail-card{background:white;border-radius:18px;padding:20px;border:1px solid #e0e7e1}
+.detail-card h3{font-family:Georgia,serif;font-size:22px;margin:0 0 13px}
+.detail-card ul{padding-left:19px;margin:0}
+.detail-card li{padding:4px 0;color:#465c5e}
+.docs{counter-reset:doc;list-style:none;padding:0!important}
+.docs li{counter-increment:doc;display:flex;gap:12px;align-items:flex-start;margin:10px 0}
+.docs li:before{content:counter(doc);flex:0 0 25px;height:25px;border-radius:50%;display:grid;place-items:center;background:#edf1f4;color:var(--teal);font-weight:800;font-size:12px}
+.duration{display:flex;align-items:center;gap:16px;background:#163f43;color:white;border-radius:18px;padding:22px 25px;margin-top:18px}
+.duration .years{font-family:Georgia,serif;font-size:36px;color:#b25065;white-space:nowrap}
+.duration p{margin:0;color:#e5edf2;font-size:14px}
+.cta{background:#4a6b81;color:white;padding:52px 0}
+.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.cta h2{max-width:650px;margin-bottom:10px}
+.cta p{color:#dce7ed;margin:0}
+.cta .btn{background:#b25065;color:#263f50;white-space:nowrap}
+footer{background:#354f61;color:#d3e0db;padding:25px 0;font-size:13px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#b25065;text-decoration:none}
+@media(max-width:760px){
+ .wrap{width:min(100% - 30px,1120px)}
+ .hero{padding:23px 0 58px}.brand{margin-bottom:42px}
+ .deadline-card{align-items:flex-start;flex-direction:column;padding:20px}
+ section{padding:42px 0}
+ .intro-grid,.universities,.focus-grid,.process,.detail-grid{grid-template-columns:1fr}
+ .focus-card.wide{grid-column:auto}
+ .focus-head{display:block}
+ .engineering,.subtopics{grid-template-columns:1fr}
+ .cta-inner{display:block}.cta .btn{margin-top:22px}
+ .topbar .wrap{height:auto;min-height:42px;padding:8px 0;gap:10px}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>ADA University · Doctoral opportunities</span></div></div>
+
+<header class="hero">
+ <div class="wrap hero-inner">
+  <div class="brand"><img class="brand-mark" src="data:image/png;base64,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" alt="ADA University mark"><div class="brand-name"><strong>ADA University</strong>Call for Applications · 2027</div></div>
+  <h1>International PhD opportunities</h1>
+  <p class="hero-copy">Applications are invited for the 2027 PhD intake at three leading Italian partner universities. Build advanced research experience, grow your academic network, and contribute to the future of research and higher education in Azerbaijan.</p>
+  <div class="hero-actions">
+   <a class="btn primary" style="color:#fff;" href="https://apply.ada.edu.az/" target="_blank" rel="noopener">Start your application <span>↗</span></a>
+   <a class="btn ghost" href="#programs">Explore PhD areas <span>↓</span></a>
+  </div>
+ </div>
+</header>
+
+<div class="wrap deadline-float">
+ <div class="deadline-card">
+  <div><div class="deadline-label">Application deadline</div><div class="deadline-date">January 4, 2027</div></div>
+  <div class="deadline-note">Submit your online application and required documents by the deadline.</div>
+ </div>
+</div>
+
+<main>
+<section>
+ <div class="wrap">
+  <div class="intro-grid">
+   <div>
+    <div class="section-kicker">About the opportunity</div>
+    <h2>Develop the next generation of scholars.</h2>
+    <p class="lead">ADA University invites talented and motivated candidates to pursue doctoral studies at the University of Bologna, Politecnico di Milano, and Politecnico di Torino.</p>
+    <p class="lead" style="font-size:15px;margin-top:17px">The initiative supports the University's long-term academic and research development. Upon completion of their studies, candidates are expected to return to Azerbaijan and contribute to ADA University's teaching, research, and academic development.</p>
+   </div>
+   <aside class="note-panel">
+    <strong>How the process works</strong>
+    <p>ADA University conducts the initial pre-selection. Shortlisted candidates then apply directly to the relevant PhD programs at the partner universities.</p>
+   </aside>
+  </div>
+  <div class="universities">
+   <article class="uni"><div class="code">UniBo</div><h3>University of Bologna</h3><p>Agriculture and Food Science</p></article>
+   <article class="uni"><div class="code">PoliMi</div><h3>Politecnico di Milano</h3><p>Architecture and Design</p></article>
+   <article class="uni"><div class="code">PoliTo</div><h3>Politecnico di Torino</h3><p>Computer, Control, Electrical and Electronics Engineering</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="focus" id="programs">
+ <div class="wrap">
+  <div class="focus-head">
+   <div><div class="section-kicker">Research opportunities</div><h2>Program focus areas</h2></div>
+   <p>Applicants should propose research topics aligned with the research expertise of their selected university.</p>
+  </div>
+  <div class="focus-grid">
+   <article class="focus-card">
+    <span class="tag">University of Bologna · UniBo</span>
+    <h3>Agriculture and Food Science</h3>
+    <p>Research addressing agricultural innovation, food quality, and sustainable food systems.</p>
+    <ul>
+     <li>Agronomy</li><li>Agricultural engineering and water management</li>
+     <li>Animal production and processing, including aquaculture</li><li>Entomology</li>
+     <li>Food quality and processing</li><li>Tree and fruit production systems</li>
+    </ul>
+    <p style="margin-top:14px;font-size:14px">Proposals should demonstrate potential to advance sustainable, innovative, and resilient agricultural and food systems.</p>
+   </article>
+
+   <article class="focus-card">
+    <span class="tag">Politecnico di Milano · PoliMi</span>
+    <h3>Architecture and Design</h3>
+    <p>Explore sustainable, inclusive, and innovative approaches to the built environment across Architecture, Urban Planning, and Design.</p>
+    <div class="subtopics">
+     <div><strong>A.</strong> Communication design</div>
+     <div><strong>B.</strong> Interior design</div>
+     <div><strong>C.</strong> Design manufacturing</div>
+     <div><strong>D.</strong> Representation and survey</div>
+     <div><strong>E.</strong> Architectural and urban design</div>
+     <div><strong>F.</strong> Urban planning</div>
+     <div><strong>G.</strong> Landscape and ecology</div>
+     <div><strong>H.</strong> Architectural technology theory and practice</div>
+     <div><strong>I.</strong> Mechanics of solids and structures</div>
+     <div><strong>J.</strong> Valuation and project appraisal in architecture</div>
+     <div><strong>K.</strong> Preservation and enhancement of cultural landscape</div>
+    </div>
+   </article>
+
+   <article class="focus-card wide">
+    <span class="tag">Politecnico di Milano · PoliMi</span>
+    <h3>Architecture and Design · Illustrative research directions</h3>
+    <div class="subtopics">
+     <div><strong>Communication design:</strong> Cultural identity and heritage narratives; new perspectives on design education and learning; general theory and practice.</div>
+     <div><strong>Interior design:</strong> Human-artificial collaboration and participatory approaches; general theory and practice.</div>
+     <div><strong>Design manufacturing:</strong> Digital fabrication and emerging technologies for experimental design.</div>
+     <div><strong>Representation and survey:</strong> Advanced survey; freehand drawing and AI for spatial knowledge; AI and visual interpretation of landscape transformations; archives and verifiable cultural landscape atlases.</div>
+     <div><strong>Architectural and urban design:</strong> Typological and morphological studies; adaptive reuse; sustainable design strategies; site-specific transformation.</div>
+     <div><strong>Urban planning:</strong> Ecological and regenerative strategies; inclusive and climate-resilient approaches; collaborative and interactive design and simulation.</div>
+     <div><strong>Landscape and ecology:</strong> Landscape design for ecological and cultural transformation; climate adaptation and resource regeneration.</div>
+     <div><strong>Other directions:</strong> Architectural technology; mechanics of solids and structures; valuation and project appraisal; cultural landscape as tangible and intangible heritage.</div>
+    </div>
+   </article>
+
+   <article class="focus-card wide">
+    <span class="tag">Politecnico di Torino · PoliTo</span>
+    <h3>Computer and Control Engineering / Electrical and Electronics Engineering</h3>
+    <p>Advanced research in computer engineering, control systems, and electrical and electronics engineering, with potential applications in emerging technologies and sustainable engineering solutions.</p>
+    <div class="engineering">
+     <div><h4>Computer and Control Engineering</h4><ul>
+      <li>Artificial intelligence and machine learning</li><li>Computer systems engineering and computer architecture</li>
+      <li>Data science, artificial vision, and computer graphics</li><li>Software engineering and mobile computing</li>
+      <li>Control and systems engineering</li><li>Cybersecurity</li>
+      <li>Parallel and distributed systems and quantum computing</li><li>Electronics and telecommunications</li>
+     </ul></div>
+     <div><h4>Electrical and Electronics Engineering</h4><ul>
+      <li>Electronics and telecommunications</li><li>Embedded systems and automation</li>
+      <li>Renewable energy technologies and smart grids</li><li>Sustainable and intelligent infrastructure</li>
+      <li>Electronic systems and devices</li><li>Control, automation, and robotics</li>
+      <li>Electromagnetics</li><li>Power and energy conversion and power systems</li>
+     </ul></div>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="section-kicker">Selection pathway</div>
+  <h2>Three stages to admission</h2>
+  <p class="lead">ADA University's PhD Support and Development Department will provide guidance and assistance throughout the process.</p>
+  <div class="process">
+   <article class="step"><div class="step-no">01</div><h3>Pre-selection by ADA University</h3><p>The Selection Committee reviews academic qualifications, English proficiency, research background, subject knowledge, motivation, and potential contribution. Shortlisted candidates are invited for an interview.</p></article>
+   <article class="step"><div class="step-no">02</div><h3>Apply to a partner university</h3><p>ADA-selected candidates apply directly to the relevant PhD programs at the University of Bologna, Politecnico di Milano, or Politecnico di Torino, following each university's admission procedures.</p></article>
+   <article class="step"><div class="step-no">03</div><h3>Scholarship and funding</h3><p>Admitted candidates may apply for support through the State Program for Studying Abroad (2022–2028) or explore funding arrangements through ADA University, subject to applicable conditions.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="details">
+ <div class="wrap">
+  <div class="section-kicker">Before you apply</div>
+  <h2>Eligibility and application documents</h2>
+  <div class="detail-grid">
+   <article class="detail-card">
+    <h3>Eligibility criteria</h3>
+    <ul>
+     <li>Be a citizen of the Republic of Azerbaijan</li>
+     <li>Hold a relevant master's degree or be in the final year of a master's program</li>
+     <li>Demonstrate English proficiency: minimum IELTS 6.5 or equivalent</li>
+     <li>Have a strong academic record and demonstrated research potential</li>
+     <li>Present a well-defined research proposal aligned with the selected university's research expertise, preferably at pre-selection</li>
+     <li>Commit to returning to Azerbaijan after doctoral studies and contributing to ADA University's academic, teaching, and research activities</li>
+    </ul>
+    <p style="font-size:14px;color:#607277;margin:13px 0 0">Teaching experience and prior research involvement will be considered an advantage.</p>
+   </article>
+   <article class="detail-card">
+    <h3>Required documents</h3>
+    <ol class="docs">
+     <li>Curriculum Vitae (CV)</li>
+     <li><span><strong>Statement of Purpose (maximum 500 words)</strong><br><span style="color:#607277;font-size:14px">Research interests, motivation for pursuing a PhD, and relevance of academic and professional background to the selected program.</span></span></li>
+     <li><span><strong>Academic Writing Sample in English</strong><br><span style="color:#607277;font-size:14px">For example, a bachelor's or master's thesis or a research paper demonstrating academic writing and research skills.</span></span></li>
+     <li>Proof of English Language Proficiency</li>
+     <li>Academic Transcripts (unofficial/scanned copy is acceptable)</li>
+    </ol>
+   </article>
+  </div>
+  <div class="duration"><div class="years">3–4 years</div><p>PhD studies generally require three to four years of full-time study and research, depending on the host university. Candidates are expected to complete required coursework, research activities, and a doctoral dissertation.</p></div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="wrap cta-inner">
+  <div><div class="section-kicker" style="color:#b25065">Your next chapter starts here</div><h2>Ready to take the next step?</h2><p>Complete the online application and submit all required documents by January 4, 2027.</p></div>
+  <a class="btn" href="https://apply.ada.edu.az/" target="_blank" rel="noopener">Apply online ↗</a>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap footer-inner">
+ <span>ADA University · PhD Study Opportunities in Italy · 2027</span>
+ <span>Questions? <a href="mailto:phd@ada.edu.az">phd@ada.edu.az</a></span>
+</div></footer>
+</body>
+</html>

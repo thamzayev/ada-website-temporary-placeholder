@@ -1,0 +1,123 @@
+:root{
+  --ink:#263b49;--muted:#637783;--teal:#4a6b81;--teal2:#5b7b90;
+  --gold:#b25065;--cream:#f5f6f7;--paper:#fff;--line:#e1e6e9;
+  --shadow:0 18px 55px rgba(18,48,51,.09);--radius:3px;
+  --sans:"Roboto",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:15px/1.55 "Roboto",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column;min-height:100vh}
+main{flex:1}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+
+.topbar{background:#354f61;color:#eaf1ed;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.topbar .wrap{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0}
+.topbar a{text-decoration:none;color:#e7a9b6}
+.topbar a:hover{color:#fff}
+.topbar-links{display:flex;align-items:center;gap:22px}
+.topbar-logo{display:flex}
+.topbar .brand-mark{width:48px;height:48px;padding:4px}
+.topbar a.btn-myada{display:inline-flex;align-items:center;background:var(--gold);color:#fff;border-radius:3px;padding:9px 20px;font-weight:700;letter-spacing:.06em;text-transform:none;font-size:14px;transition:background .2s}
+.topbar a.btn-myada:hover{background:#9a4256;color:#fff}
+
+.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#3d5d73 0%,#4a6b81 65%,#66859a 100%);color:#fff;padding:28px 0 78px}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.12);border-radius:50%;pointer-events:none}
+.hero:before{width:580px;height:580px;right:-130px;top:-300px}
+.hero:after{width:430px;height:430px;right:5px;top:-220px}
+.hero-inner{position:relative;z-index:1;padding-top:22px}
+.hero.compact{padding-bottom:70px}
+.brand{display:flex;align-items:center;gap:15px;margin-bottom:38px;text-decoration:none}
+.brand-mark{width:62px;height:62px;object-fit:contain;background:#fff;border-radius:50%;padding:5px}
+.brand-name{font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:#dce9e4}
+.brand-name strong{display:block;font-size:15px;letter-spacing:.12em;color:#fff}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:#f0b8c4;font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.eyebrow:before{content:"";width:28px;height:1px;background:#f0b8c4}
+h1{font-family:"Montserrat",var(--sans);font-weight:700;font-size:clamp(34px,5vw,58px);line-height:1.1;letter-spacing:-.025em;max-width:820px;margin:18px 0}
+.hero-copy{font-size:17px;max-width:690px;color:#e5edf2;margin:0}
+
+.notice-float{position:relative;z-index:2;margin-top:-38px}
+.notice-card{background:#fff;border-radius:3px;box-shadow:var(--shadow);padding:22px 28px;display:flex;align-items:center;gap:18px;border-left:4px solid var(--gold)}
+.notice-icon{flex:0 0 42px;height:42px;border-radius:3px;display:grid;place-items:center;background:#f6e9ec;color:var(--gold)}
+.notice-card p{margin:0;color:var(--muted);font-size:15px}
+.notice-card strong{color:var(--ink)}
+
+section{padding:56px 0}
+.section-kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:800}
+h2{font-family:"Montserrat",var(--sans);font-size:clamp(26px,3.2vw,36px);line-height:1.12;font-weight:700;margin:10px 0 15px;letter-spacing:-.015em}
+.lead{color:var(--muted);max-width:760px;margin:0;font-size:16px}
+
+/* Tiles */
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
+.tile{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:3px;padding:26px 26px 22px;box-shadow:0 8px 28px rgba(18,48,51,.04);text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s}
+a.tile:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#cfd9df}
+a.tile:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.tile-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.tile-icon{flex:0 0 46px;height:46px;border-radius:3px;display:grid;place-items:center;background:#edf1f4;color:var(--teal)}
+.tile .code{font-size:11px;color:var(--gold);font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.tile h3{font-family:"Montserrat",var(--sans);line-height:1.2;margin:2px 0 0;font-weight:600;font-size:21px}
+.tile p{margin:0;color:var(--muted);font-size:15px}
+.tile-foot{margin-top:auto;padding-top:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--line);margin-top:22px;padding-top:16px}
+.tile-link{font-weight:700;color:var(--teal);font-size:14px}
+.tile-meta{font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+a.tile:hover .tile-link{color:var(--gold)}
+.contact-list{list-style:none;margin:0;padding:0}
+.contact-list li{display:flex;gap:12px;padding:8px 0;border-top:1px solid var(--line);font-size:15px}
+.contact-list li:first-child{border-top:0;padding-top:0}
+.contact-list .k{flex:0 0 72px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.contact-list a{color:var(--teal);font-weight:600;text-decoration:none}
+.contact-list a:hover{color:var(--gold);text-decoration:underline}
+
+/* Calendar page */
+.cal-nav{position:sticky;top:0;z-index:5;background:rgba(245,246,247,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.cal-nav .wrap{display:flex;gap:8px;overflow-x:auto;padding:12px 0}
+.cal-nav a{flex:0 0 auto;text-decoration:none;font-size:13px;font-weight:700;color:var(--teal);border:1px solid #cfd9df;background:#fff;border-radius:3px;padding:8px 15px}
+.cal-nav a:hover{border-color:var(--teal);background:#edf1f4}
+.cal-block{scroll-margin-top:70px}
+.cal-block + .cal-block{border-top:1px solid var(--line)}
+.cal-block .lead{margin-bottom:24px}
+.term{background:#fff;border:1px solid var(--line);border-radius:3px;overflow:hidden;margin-top:16px;box-shadow:0 8px 28px rgba(18,48,51,.04)}
+.term-head{background:#4a6b81;color:#fff;padding:13px 20px;font-family:"Montserrat",var(--sans);font-size:16px;font-weight:600}
+.term-sub{background:#f6e9ec;color:var(--gold);padding:8px 20px;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;border-top:1px solid #ecd3d9;border-bottom:1px solid #ecd3d9}
+.cal-table{width:100%;border-collapse:collapse}
+.cal-table td{padding:10px 20px;border-top:1px solid var(--line);vertical-align:top;font-size:15px}
+.cal-table tr:first-child td{border-top:0}
+.cal-table td.d{width:36%;font-weight:600;color:var(--ink);white-space:nowrap}
+.cal-table td.e{color:#42585b}
+.cal-table tr.off td{background:#fbf5f6}
+.cal-table tr.off td.e{color:var(--gold);font-weight:600}
+.term-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.term-grid .term{margin-top:0}
+.footnotes{margin-top:22px;font-size:13px;color:var(--muted)}
+.footnotes p{margin:6px 0}
+.legend{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin-top:4px}
+.legend i{width:14px;height:14px;border-radius:3px;background:#fbf5f6;border:1px solid #ecd3d9}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:3px;padding:12px 20px;font-weight:700;text-decoration:none;transition:.2s}
+.btn.ghost{border:1px solid rgba(255,255,255,.38);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+
+footer{background:#354f61;color:#d3e0db;padding:25px 0;font-size:13px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#e7a9b6;text-decoration:none}
+footer a:hover{color:#fff}
+
+@media(max-width:860px){
+ .term-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+ .wrap{width:min(100% - 30px,1120px)}
+ .hero{padding:23px 0 66px}
+ .notice-card{align-items:flex-start;padding:20px}
+ section{padding:42px 0}
+ .tiles{grid-template-columns:1fr}
+ .cal-table td{padding:9px 14px;font-size:14px}
+ .cal-table td.d{white-space:normal;width:40%}
+ .topbar .wrap{min-height:58px}
+}
+@media print{
+ .topbar,.cal-nav,.hero:before,.hero:after,.btn{display:none}
+ .hero{background:none;color:var(--ink);padding:0}
+ .hero-copy{color:var(--muted)}
+ .term{break-inside:avoid;box-shadow:none}
+}
