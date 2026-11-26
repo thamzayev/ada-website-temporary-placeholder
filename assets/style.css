@@ -20,6 +20,8 @@ a{color:inherit}
 .topbar .brand-mark{width:48px;height:48px;padding:4px}
 .topbar a.btn-myada{display:inline-flex;align-items:center;background:var(--gold);color:#fff;border-radius:3px;padding:9px 20px;font-weight:700;letter-spacing:.06em;text-transform:none;font-size:14px;transition:background .2s}
 .topbar a.btn-myada:hover{background:#9a4256;color:#fff}
+.topbar a.btn-apply{display:inline-flex;align-items:center;background:#e5e5e5;color:#000;border-radius:3px;padding:9px 20px;font-weight:700;letter-spacing:.06em;text-transform:none;font-size:14px;transition:background .2s}
+.topbar a.btn-apply:hover{background:#d0d0d0;color:#000}
 
 .hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#3d5d73 0%,#4a6b81 65%,#66859a 100%);color:#fff;padding:28px 0 78px}
 .hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.12);border-radius:50%;pointer-events:none}
